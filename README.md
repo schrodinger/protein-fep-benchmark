@@ -1,2 +1,2 @@
-# protein_fep_benchmark
-Data and scripts for the Protein Binding FEP+ benchmark manuscript.
+# Protein Binding FEP+ Benchmark
+Data and scripts for the Protein Binding FEP+ benchmark manuscript (Sampson, et al., in preparation).
