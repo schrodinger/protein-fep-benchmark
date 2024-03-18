@@ -188,9 +188,7 @@ limit_to_methods <- function(df, methods){
 calculate_dG_and_ddG <- function(df) {
     df %>%
     mutate(
-        wt_dG = R * temp * log(affinity_wt_parsed),
-        mut_dG = R * temp * log(affinity_mut_parsed),
-        expt_ddG = mut_dG - wt_dG,
+        expt_ddG = R * temp * log(affinity_mut_parsed / affinity_wt_parsed),
     )
 }
 
