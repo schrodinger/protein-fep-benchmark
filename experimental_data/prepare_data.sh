@@ -30,6 +30,16 @@ Rscript prepare_skempi_systems.R \
     1DVF 1IAR 1JRH 1KTZ 1OGA 1VFB
 
 
+##################################################
+# Non-SKEMPI Systems
+##################################################
+print_section_header "Preparing non-SKEMPI system experimental CSV files"
+data_xlsx="experimental_data.xlsx"
+Rscript prepare_non-skempi_systems.R \
+    -i "$data_xlsx" \
+    5EO9 6NRQ 6M0J 3SKJ 5L6Y 6SBA
+
+
 print_divider
 
 
