@@ -3,6 +3,7 @@ import logging
 from pathlib import Path
 from pprint import pformat
 import re
+from typing import Union
 
 import numpy as np
 import pandas as pd
@@ -22,13 +23,13 @@ RECALC_SUFFIX = '_recalc{}ns'
 GROUP_DGS_SUFFIX = '_dGs_pH{}'
 
 
-def separate_column(df: pd.DataFrame, col: str, into: list[str], sep: str,
-                    remove: bool=True):
-    # Split an input string column by `sep` into the columns listed in `into`.
+def separate_column(df: pd.DataFrame, col: str, into: list[str],
+                    pattern: Union[str, re.Pattern], remove: bool=True):
+    # Split an input string column by `pattern` into the columns from `into`.
     # For a non-string column, use its values for the first new column, and
     # set further columns to NaN.
     try:
-        new_cols = df[col].str.split(pat=sep, expand=True)
+        new_cols = df[col].str.split(pat=pattern, expand=True)
         new_cols.columns = into
     except AttributeError:
         data_dict = {}
