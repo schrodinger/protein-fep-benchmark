@@ -1,0 +1,4 @@
+Node Group Title,Protonated Residue Name,Deprotonated Residue Name,Solvent pKa,Complex pKa
+B-Q23R,B:11 ASH,B:11 ASP,3.33,2.93
+WT,B:11 ASH,B:11 ASP,3.31,2.93
+WT,B:15 LYS,B:15 LYN,10.47,10.38

@@ -247,8 +247,7 @@ def generate_dataset(systems_csv):
         logger.info(f'- merging into primary data frame')
         df = pd.concat([df, orig_df, recalc_df], axis=0, ignore_index=True)
 
-    logger.info('\nProcessing merged data frame'
-                '\n----------------------------')
+    logger.info('\nProcessing merged data frame')
     logger.debug(f'    shape: {df.shape}')
 
     # Filter for single mutants

@@ -1,0 +1,5 @@
+Node Group Title,Protonated Residue Name,Deprotonated Residue Name,Solvent pKa,Complex pKa
+WT,D:30 LYS,D:30 LYN,10.49,10.31
+WT,D:33 HIP,D:33 HID,5.91,5.21
+WT,D:33 HIP,D:33 HIE,5.77,5.52
+WT,D:52 ASH,D:52 ASP,3.48,3.15

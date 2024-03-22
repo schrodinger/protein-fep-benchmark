@@ -1,0 +1,6 @@
+Node Group Title,Protonated Residue Name,Deprotonated Residue Name,Solvent pKa,Complex pKa
+D-A78K,D:78 LYS,D:78 LYN,8.86,9.07
+D-N94D,D:94 ASH,D:94 ASP,5.12,5.32
+D-S133D,D:133 ASH,D:133 ASP,6.41,7.44
+WT,D:129 ASH,D:129 ASP,4.33,4.91
+WT,D:81 LYS,D:81 LYN,10.25,11.76

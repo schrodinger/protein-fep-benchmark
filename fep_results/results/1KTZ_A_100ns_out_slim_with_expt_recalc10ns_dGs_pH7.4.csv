@@ -1,0 +1,9 @@
+Node Group Title,Node Title,Node Experimental Binding dG,Node Predicted Binding dG,dG Correction,Node Group Predicted Binding dG
+A-R25A,A-ARG25ALA,1.48,0.99+-0.16,0.00,0.99+-0.16
+A-R25K,A-ARG25LYN,1.15,0.97+-0.15,-0.71,0.26+-0.15
+A-R25K,A-ARG25LYS,1.15,0.26+-0.16,0.00,0.26+-0.16
+A-R94A,A-ARG94ALA,2.88,3.92+-0.16,0.00,3.92+-0.16
+A-R94K,A-ARG94LYN,2.20,4.27+-0.16,-3.03,1.24+-0.16
+A-R94K,A-ARG94LYS,2.20,1.24+-0.16,0.00,1.24+-0.16
+A-V92I,A-VAL92ILE,0.24,-0.34+-0.15,0.00,-0.34+-0.15
+WT,WT,0.00,0.00+-0.15,0.00,0.00+-0.15

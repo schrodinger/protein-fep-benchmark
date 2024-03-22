@@ -1,0 +1,6 @@
+Node Group Title,Node Title,Node Experimental Binding dG,Node Predicted Binding dG,dG Correction,Node Group Predicted Binding dG
+A-H110K,A-HIE110LYN,1.95,0.44+-0.29,2.06,2.50+-0.29
+A-H110K,A-HIE110LYS,1.95,2.52+-0.31,-0.02,2.50+-0.31
+WT,A-HIE110HID,N/A,0.87+-0.38,0.07,0.94+-0.38
+WT,A-HIE110HIP,N/A,1.69+-0.50,-0.75,0.94+-0.50
+WT,WT,0.00,0.94+-0.28,-0.00,0.94+-0.28

@@ -1,0 +1,5 @@
+Node Group Title,Protonated Residue Name,Deprotonated Residue Name,Solvent pKa,Complex pKa
+E-N55D,E:55 ASH,E:55 ASP,4.81,4.56
+E-Q58E,E:58 GLH,E:58 GLU,5.94,7.81
+WT,E:32 ASH,E:32 ASP,2.89,3.49
+WT,E:56 ASH,E:56 ASP,3.96,4.70

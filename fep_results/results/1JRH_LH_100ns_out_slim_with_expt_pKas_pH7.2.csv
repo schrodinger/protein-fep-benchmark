@@ -1,0 +1,7 @@
+Node Group Title,Protonated Residue Name,Deprotonated Residue Name,Solvent pKa,Complex pKa
+WT,H:100BHIP,H:100BHID,5.22,1.21
+WT,H:100BHIP,H:100BHIE,4.54,-0.76
+WT,H:54 ASH,H:54 ASP,5.96,4.09
+WT,H:56 ASH,H:56 ASP,4.29,2.12
+WT,L:27 GLH,L:27 GLU,4.40,3.60
+WT,L:28 ASH,L:28 ASP,4.38,3.63

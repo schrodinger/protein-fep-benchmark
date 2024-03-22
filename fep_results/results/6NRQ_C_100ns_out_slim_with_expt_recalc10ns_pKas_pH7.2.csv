@@ -1,0 +1,7 @@
+Node Group Title,Protonated Residue Name,Deprotonated Residue Name,Solvent pKa,Complex pKa
+C-Q138D,C:138 ASH,C:138 ASP,9.69,13.74
+C-V144K,C:144 LYS,C:144 LYN,10.53,9.39
+WT,C:90 HIP,C:90 HID,7.89,7.25
+WT,C:90 HIP,C:90 HIE,7.46,6.95
+WT,C:94 HIP,C:94 HID,6.65,6.11
+WT,C:94 HIP,C:94 HIE,6.86,7.75
