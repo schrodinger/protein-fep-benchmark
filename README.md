@@ -9,5 +9,5 @@ Data and scripts for the Protein Binding FEP+ benchmark manuscript (Sampson, et 
 
 2. Compile the FEP results dataset, including experimental data and derived data columns.
 ```bash
-( cd fep_results && ./compile_dataset.sh )
+( cd results && ./compile_dataset.sh )
 ```
