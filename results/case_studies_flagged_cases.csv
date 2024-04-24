@@ -1,0 +1,5 @@
+system,mutation,mutation1,flags,charged_flag_correction
+3SKJ_HL,H-ALA100ELYS,H:A100EK,introduces_buried_charge,-3
+3SKJ_HL,L-ASN53ARG,L:N53R,introduces_buried_charge,-3
+3SKJ_HL,H-PRO100GTYR,H:P100GY,proline,0
+5L6Y_HL,L-ASP50ALA,L:D50A,sbb_xint,-3
