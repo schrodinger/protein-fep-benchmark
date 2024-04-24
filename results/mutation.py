@@ -5,11 +5,11 @@ mutation.py - Handle protein residue mutation information.
 import re
 
 from schrodinger import structure
-from schrodinger.application.scisol.packages.fep import graph
+from schrodinger.application.scisol.fep import graph
 from schrodinger.utils import log
 
 # Local
-from . import pka
+import pka
 
 
 # Configure logging
