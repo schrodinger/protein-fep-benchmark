@@ -17,7 +17,7 @@ from schrodinger.application.scisol.packages.fep_gui import sid_report
 from schrodinger.structutils import analyze
 
 # Custom local module (depends on SCHRODINGER_PYTHONPATH)
-from . import mutation
+import mutation
 
 
 # Theoretical Maximum SASA values from Table 1 of:

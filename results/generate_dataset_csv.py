@@ -81,7 +81,7 @@ N_MUT = 'n_mut'
 EXP_DG = 'exp_dg'
 EXP_DG_UNC = 'exp_dg_unc'
 DG_CORRECTION = 'dg_correction'
-DG_CORRECTION_UNC = 'dg_correction'
+# DG_CORRECTION_UNC = 'dg_correction_unc'
 NAIVE_PRED_DG = 'naive_pred_dg'
 NAIVE_PRED_DG_UNC = 'naive_pred_dg_unc'
 GROUP_PRED_DG = 'group_pred_dg'
@@ -292,14 +292,14 @@ def generate_dataset(systems_csv):
                          pattern='_', remove=False)
 
     # Add ddG columns
-    logger.info('- Calculating ddG columns (vs. {WT})')
+    logger.info(f'- Calculating ddG columns (vs. {WT})')
     df = calculate_ddg_col(df, EXP_DG, keep_wt=True)
     df = calculate_ddg_col(df, NAIVE_PRED_DG, keep_wt=True)
-    df = calculate_ddg_col(df, DG_CORRECTION)
+    # df = calculate_ddg_col(df, DG_CORRECTION)
     df = calculate_ddg_col(df, GROUP_PRED_DG, keep_wt=True)
 
     # Remove WT rows
-    logger.info('- Removing {WT} and self-mutation (titration) rows')
+    logger.info(f'- Removing {WT} and self-mutation (titration) rows')
     df = df[df[MUTATION] != WT]
     # Remove titration mutations
     df = df[df[START_AA1] != df[END_AA1]]
@@ -350,6 +350,7 @@ def generate_dataset(systems_csv):
         RESNUM,
         INSCODE,
         END_AA,
+        END_AA1,
         BASE_SYSTEM,
         COMPONENT,
         TIME,
@@ -359,7 +360,7 @@ def generate_dataset(systems_csv):
         NAIVE_PRED_DG,
         NAIVE_PRED_DG_UNC,
         DG_CORRECTION,
-        DG_CORRECTION_UNC,
+        # DG_CORRECTION_UNC,
         GROUP_PRED_DG,
         GROUP_PRED_DG_UNC,
         N_MUT,
