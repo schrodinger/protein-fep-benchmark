@@ -2,43 +2,29 @@ import argparse
 from collections import defaultdict
 import logging
 import os
-from pprint import pprint
 import sys
 
 import pandas as pd
 
 from schrodinger import structure
 from schrodinger.application.prime.packages.ifd_plus_stages import stage
-from schrodinger.application.scisol.packages.fep import graph
-from schrodinger.application.scisol.packages.fep.groups.protein_corrections \
+from schrodinger.application.scisol.fep import graph
+from schrodinger.application.scisol.fep.groups.protein_corrections \
     import get_edge_mutated_sites
-
 from schrodinger.infra import mm
 from schrodinger.structutils import analyze
 from schrodinger.structutils.interactions import hbond
 from schrodinger.utils import log
 
-# Local modules (depend on $SCHRODINGER_PYTHONPATH)
+# Local modules
 from fmp_features import calculate_graph_features
 import mutation
 
 
 # Configure logging
-DEFAULT_LOGGING_FORMAT = '%(message)s'
 DEFAULT_LOGGING_LEVEL = logging.WARNING
-try:
-    # Schrodinger logging
-    logger = log.get_output_logger(__name__)
-    # logger.format(DEFAULT_LOGGING_FORMAT)
-    logger.level = DEFAULT_LOGGING_LEVEL
-except NameError:
-    # Python builtin fallback
-    logger = logging.getLogger(__name__)
-    logger.setLevel(DEFAULT_LOGGING_LEVEL)
-    console_handler = logging.StreamHandler()
-    formatter = logging.Formatter(DEFAULT_LOGGING_FORMAT)
-    console_handler.setFormatter(formatter)
-    logger.addHandler(console_handler)
+logger = log.get_output_logger(__name__)
+logger.level = DEFAULT_LOGGING_LEVEL
 
 
 # H-bond params same as for IFD+
@@ -101,8 +87,7 @@ def title_3to1(t):
 ##################################################
 
 
-def get_hbonds(st, res,
-                                interaction_type=hbond.HYDROGEN_BONDS):
+def get_hbonds(st, res):
     '''Return a list of hbonds.'''
     res_str = f"{res.chain}:{res.pdbres.strip()}{res.resnum}{res.inscode}"
     logger.debug(f'detecting salt bridge for {res_str}')
@@ -126,7 +111,7 @@ def find_salt_bridges(st, res):
 
     Returned `donor` and `acceptor` are _structure._StructureAtom instances.
     '''
-    hbonds = get_hbonds(st, res, interaction_type=hbond.HYDROGEN_BONDS)
+    hbonds = get_hbonds(st, res)
 
     # res_sidechain_asl = f'({res.getAsl()} and sidechain)'
     # res_sidechain_atoms = analyze.evaluate_asl(st, res_sidechain_asl)
