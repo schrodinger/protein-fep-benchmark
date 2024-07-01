@@ -21,7 +21,7 @@ logger.level = DEFAULT_LOGGING_LEVEL
 
 
 DEFAULT_MODEL_DG_PATTERN = 'model_dG_{0}.csv'
-DEFAULT_OUT_DIR = Path("results")
+DEFAULT_OUT_DIR = Path("csv")
 
 ADD_EXPT_SCRIPT = 'add_expt_to_fmp.py'
 REANALYZE_SCRIPT = 'reanalyze_fmp.py'

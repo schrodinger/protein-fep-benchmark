@@ -21,7 +21,7 @@ logger.level = DEFAULT_LOGGING_LEVEL
 
 
 # Filenames
-RESULTS_PATH = Path('results')
+RESULTS_PATH = Path('csv')
 RECALC_SUFFIX = '_recalc{}ns'
 GROUP_DGS_SUFFIX = '_dGs_pH{}'
 FULL_DATASET_CSV = 'all_systems_full_dataset.csv'
