@@ -24,7 +24,7 @@ The following analysis was performed on the systems in the paper.
 5. Flag probable outliers from the .fmp files.
 
     ```bash
-    export SCHRODINGER=/path/to/Schrodinger_Suite_2024-2>
+    export SCHRODINGER=/path/to/Schrodinger_Suite_2024-2
     (
         cd results
 
