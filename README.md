@@ -11,7 +11,7 @@ The following analysis was performed on the systems in the paper.
     ( cd experimental_data && ./prepare_data.sh )
     ```
 
-2. Place original 100 ns `out.fmp` files into `results/fmp`.  Due to size limitations, these files are not included in this repository.
+2. Place original 100 ns `out.fmp` files into `results/fmp`.  Due to size limitations, these files are not included in this repository but may be downloaded [here](https://learn.schrodinger.com/public/misc/fmp_files.zip) (340 MB).
 
 3. Edit the `results/systems.csv` file to include the relevant metadata for each system.
 
