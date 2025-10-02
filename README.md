@@ -47,6 +47,7 @@ The following analysis was performed on the systems in the paper.
         # `charged_flag_correction_term.txt` from the benchmark dataset
         Rscript flag_outliers.R \
             case_studies_merged_features_results.csv \
-            -o case_studies_flagged_cases.csv
+            -o case_studies_flagged_cases.csv \
+            --charged-flag-corr $(cat charged_flag_correction_term.txt)
     )
     ```
